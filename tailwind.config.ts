@@ -64,9 +64,9 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				tpms: {
-					blue: '#1E90FF',
-					'blue-light': '#66B2FF',
-					'blue-dark': '#0066CC',
+					blue: '#1A365D',
+					'blue-light': '#2A4A7F',
+					'blue-dark': '#0F2942',
 					grey: '#F8F9FA',
 					'grey-dark': '#E9ECEF',
 				}

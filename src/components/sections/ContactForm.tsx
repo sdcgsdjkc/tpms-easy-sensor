@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Calendar, Clock } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -100,9 +99,8 @@ const ContactForm: React.FC = () => {
                   <div>
                     <h4 className="font-medium">Часы работы</h4>
                     <p className="text-gray-600">
-                      Пн-Пт: 9:00 - 18:00<br />
-                      Сб: 9:00 - 14:00<br />
-                      Вс: Выходной
+                      Вт-Пт: 9:00 - 17:00<br />
+                      Сб-Вс: Выходной
                     </p>
                   </div>
                 </div>
@@ -244,7 +242,6 @@ const ContactForm: React.FC = () => {
                         <option value="14:00">14:00 - 15:00</option>
                         <option value="15:00">15:00 - 16:00</option>
                         <option value="16:00">16:00 - 17:00</option>
-                        <option value="17:00">17:00 - 18:00</option>
                       </select>
                     </div>
                   </div>

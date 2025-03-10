@@ -9,7 +9,7 @@ interface BenefitCardProps {
   icon: React.ReactNode;
   className?: string;
   delay?: number;
-  direction?: 'up' | 'down' | 'left' | 'right';
+  direction?: 'left' | 'right' | 'up' | 'down';
 }
 
 const BenefitCard: React.FC<BenefitCardProps> = ({ 
@@ -18,18 +18,19 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
   icon, 
   className,
   delay = 0,
-  direction = 'up' 
+  direction = 'up'
 }) => {
   return (
-    <FadeIn delay={delay} direction={direction}>
+    <FadeIn delay={delay} direction={direction} className="h-full">
       <div className={cn(
-        'flex items-start p-4',
+        'bg-white p-6 rounded-lg shadow-soft transition-all duration-300 h-full',
+        'hover:shadow-md hover:translate-y-[-2px]',
         className
       )}>
-        <div className="mr-4 text-tpms-blue text-2xl mt-1 flex-shrink-0">{icon}</div>
-        <div>
-          <h3 className="text-lg font-medium mb-2">{title}</h3>
-          <p className="text-gray-600">{description}</p>
+        <div className="flex flex-col h-full">
+          <div className="mb-4 text-tpms-blue text-3xl">{icon}</div>
+          <h3 className="text-xl font-semibold mb-2">{title}</h3>
+          <p className="text-gray-600 flex-grow">{description}</p>
         </div>
       </div>
     </FadeIn>

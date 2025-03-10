@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-start">
                 <Clock className="h-5 w-5 text-tpms-blue mr-2 mt-1 flex-shrink-0" />
-                <span className="text-gray-600">Пн-Пт: 9:00 - 18:00<br />Сб: 9:00 - 14:00</span>
+                <span className="text-gray-600">Вт-Пт: 9:00 - 17:00<br />Сб-Вс: Выходной</span>
               </li>
             </ul>
           </div>

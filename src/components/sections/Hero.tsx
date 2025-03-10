@@ -75,11 +75,11 @@ const Hero: React.FC = () => {
               <div className="mt-10 grid grid-cols-3 gap-4">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-tpms-blue">15 000</div>
-                  <div className="text-sm text-gray-600">цена датчика, тенге</div>
+                  <div className="text-sm text-gray-600">цена датчика тенге</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-tpms-blue">2 500</div>
-                  <div className="text-sm text-gray-600">стоимость прошивки, тенге</div>
+                  <div className="text-sm text-gray-600">стоимость прошивки тенге</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-tpms-blue">100%</div>
