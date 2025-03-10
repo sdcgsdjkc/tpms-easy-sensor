@@ -60,7 +60,7 @@ const About: React.FC = () => {
               <div className="relative">
                 <div className="aspect-w-16 aspect-h-9 w-full overflow-hidden rounded-xl shadow-xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1652712446131-bbc62cab35ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
+                    src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
                     alt="Процесс прошивки TPMS датчика" 
                     className="w-full h-full object-cover"
                   />

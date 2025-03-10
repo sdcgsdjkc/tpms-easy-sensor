@@ -93,8 +93,8 @@ const Hero: React.FC = () => {
             <FadeIn delay={300} direction="left">
               <div className="relative overflow-hidden rounded-2xl shadow-xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1635770311293-b9e451adbd1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" 
-                  alt="TPMS датчик" 
+                  src="https://images.unsplash.com/photo-1627689133915-cb0bbf56b537?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                  alt="Autel TPMS датчик" 
                   className={`w-full h-auto object-cover transition-all duration-1000 image-lazy ${isLoaded ? 'loaded' : 'loading'}`}
                   onLoad={() => setIsLoaded(true)}
                 />
