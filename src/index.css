@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 210 100% 50%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -95,7 +98,37 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .glass-card {
+    @apply bg-white bg-opacity-70 backdrop-blur-sm border border-white border-opacity-20 shadow-glass;
+  }
+
+  .glass-navbar {
+    @apply bg-white bg-opacity-80 backdrop-blur-md border-b border-white border-opacity-20;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  /* Image lazy loading blur effect */
+  .image-lazy {
+    transition: filter 0.3s ease-in-out;
+  }
+
+  .image-lazy.loading {
+    filter: blur(5px);
+  }
+
+  .image-lazy.loaded {
+    filter: blur(0);
   }
 }
