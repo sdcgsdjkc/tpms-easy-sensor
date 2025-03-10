@@ -31,7 +31,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           <div className="mb-4 text-tpms-blue text-3xl">{icon}</div>
           <h3 className="text-xl font-semibold mb-2">{title}</h3>
           {price && (
-            <div className="mb-3 font-bold text-tpms-blue-dark">{price} тенге</div>
+            <div className="mb-3 font-bold text-tpms-blue-dark">{price}</div>
           )}
           <p className="text-gray-600 flex-grow">{description}</p>
         </div>
