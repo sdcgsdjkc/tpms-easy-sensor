@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { CreditCard, Clock, Shield, AlertTriangle, Zap, Tool } from 'lucide-react';
+import { CreditCard, Clock, Shield, AlertTriangle, Zap, Wrench } from 'lucide-react';
 import BenefitCard from '../ui/BenefitCard';
 import FadeIn from '../animations/FadeIn';
 
@@ -42,7 +42,7 @@ const Benefits: React.FC = () => {
       direction: 'left' as const
     },
     {
-      icon: <Tool />,
+      icon: <Wrench />,
       title: 'Профессиональный подход',
       description: 'Используем современное оборудование и профессиональное программное обеспечение для прошивки датчиков.',
       delay: 350,
