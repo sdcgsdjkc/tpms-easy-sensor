@@ -93,73 +93,208 @@ const Hero: React.FC = () => {
                       className="w-full p-2 border border-gray-300 rounded-md focus:ring-tpms-blue focus:border-tpms-blue"
                     >
                       {/* Japanese Brands */}
-                      <option value="Toyota Camry">Toyota Camry</option>
-                      <option value="Toyota Land Cruiser">Toyota Land Cruiser</option>
-                      <option value="Toyota RAV4">Toyota RAV4</option>
-                      <option value="Toyota Highlander">Toyota Highlander</option>
-                      <option value="Toyota Corolla">Toyota Corolla</option>
-                      <option value="Lexus RX">Lexus RX</option>
-                      <option value="Lexus LX">Lexus LX</option>
-                      <option value="Lexus NX">Lexus NX</option>
-                      <option value="Lexus ES">Lexus ES</option>
-                      <option value="Honda Accord">Honda Accord</option>
-                      <option value="Honda CR-V">Honda CR-V</option>
-                      <option value="Honda Civic">Honda Civic</option>
-                      <option value="Mazda CX-5">Mazda CX-5</option>
-                      <option value="Mazda CX-9">Mazda CX-9</option>
-                      <option value="Mazda 6">Mazda 6</option>
-                      <option value="Nissan X-Trail">Nissan X-Trail</option>
-                      <option value="Nissan Qashqai">Nissan Qashqai</option>
-                      <option value="Nissan Patrol">Nissan Patrol</option>
-                      <option value="Mitsubishi Outlander">Mitsubishi Outlander</option>
-                      <option value="Mitsubishi Pajero">Mitsubishi Pajero</option>
-                      <option value="Subaru Forester">Subaru Forester</option>
-                      <option value="Subaru Outback">Subaru Outback</option>
+                      <optgroup label="Японские автомобили">
+                        <option value="Toyota Camry">Toyota Camry</option>
+                        <option value="Toyota Land Cruiser">Toyota Land Cruiser</option>
+                        <option value="Toyota Land Cruiser Prado">Toyota Land Cruiser Prado</option>
+                        <option value="Toyota RAV4">Toyota RAV4</option>
+                        <option value="Toyota Highlander">Toyota Highlander</option>
+                        <option value="Toyota Corolla">Toyota Corolla</option>
+                        <option value="Toyota Alphard">Toyota Alphard</option>
+                        <option value="Toyota Harrier">Toyota Harrier</option>
+                        <option value="Toyota Fortuner">Toyota Fortuner</option>
+                        <option value="Toyota Venza">Toyota Venza</option>
+                        <option value="Lexus RX">Lexus RX</option>
+                        <option value="Lexus LX">Lexus LX</option>
+                        <option value="Lexus NX">Lexus NX</option>
+                        <option value="Lexus ES">Lexus ES</option>
+                        <option value="Lexus LS">Lexus LS</option>
+                        <option value="Lexus GX">Lexus GX</option>
+                        <option value="Lexus UX">Lexus UX</option>
+                        <option value="Honda Accord">Honda Accord</option>
+                        <option value="Honda CR-V">Honda CR-V</option>
+                        <option value="Honda Civic">Honda Civic</option>
+                        <option value="Honda Pilot">Honda Pilot</option>
+                        <option value="Honda HR-V">Honda HR-V</option>
+                        <option value="Mazda CX-5">Mazda CX-5</option>
+                        <option value="Mazda CX-9">Mazda CX-9</option>
+                        <option value="Mazda CX-30">Mazda CX-30</option>
+                        <option value="Mazda 6">Mazda 6</option>
+                        <option value="Mazda 3">Mazda 3</option>
+                        <option value="Nissan X-Trail">Nissan X-Trail</option>
+                        <option value="Nissan Qashqai">Nissan Qashqai</option>
+                        <option value="Nissan Patrol">Nissan Patrol</option>
+                        <option value="Nissan Murano">Nissan Murano</option>
+                        <option value="Nissan Pathfinder">Nissan Pathfinder</option>
+                        <option value="Nissan Teana">Nissan Teana</option>
+                        <option value="Nissan Juke">Nissan Juke</option>
+                        <option value="Mitsubishi Outlander">Mitsubishi Outlander</option>
+                        <option value="Mitsubishi Pajero">Mitsubishi Pajero</option>
+                        <option value="Mitsubishi Pajero Sport">Mitsubishi Pajero Sport</option>
+                        <option value="Mitsubishi ASX">Mitsubishi ASX</option>
+                        <option value="Mitsubishi Eclipse Cross">Mitsubishi Eclipse Cross</option>
+                        <option value="Subaru Forester">Subaru Forester</option>
+                        <option value="Subaru Outback">Subaru Outback</option>
+                        <option value="Subaru XV">Subaru XV</option>
+                        <option value="Subaru Legacy">Subaru Legacy</option>
+                        <option value="Suzuki Grand Vitara">Suzuki Grand Vitara</option>
+                        <option value="Suzuki SX4">Suzuki SX4</option>
+                        <option value="Suzuki Vitara">Suzuki Vitara</option>
+                        <option value="Infiniti QX80">Infiniti QX80</option>
+                        <option value="Infiniti QX60">Infiniti QX60</option>
+                        <option value="Infiniti QX50">Infiniti QX50</option>
+                        <option value="Infiniti Q50">Infiniti Q50</option>
+                      </optgroup>
                       
                       {/* Korean Brands */}
-                      <option value="Hyundai Sonata">Hyundai Sonata</option>
-                      <option value="Hyundai Santa Fe">Hyundai Santa Fe</option>
-                      <option value="Hyundai Tucson">Hyundai Tucson</option>
-                      <option value="Hyundai Creta">Hyundai Creta</option>
-                      <option value="Hyundai Palisade">Hyundai Palisade</option>
-                      <option value="Kia K5">Kia K5</option>
-                      <option value="Kia Sportage">Kia Sportage</option>
-                      <option value="Kia Sorento">Kia Sorento</option>
-                      <option value="Kia Seltos">Kia Seltos</option>
-                      <option value="Kia Carnival">Kia Carnival</option>
+                      <optgroup label="Корейские автомобили">
+                        <option value="Hyundai Sonata">Hyundai Sonata</option>
+                        <option value="Hyundai Santa Fe">Hyundai Santa Fe</option>
+                        <option value="Hyundai Tucson">Hyundai Tucson</option>
+                        <option value="Hyundai Palisade">Hyundai Palisade</option>
+                        <option value="Hyundai Creta">Hyundai Creta</option>
+                        <option value="Hyundai Elantra">Hyundai Elantra</option>
+                        <option value="Hyundai i30">Hyundai i30</option>
+                        <option value="Hyundai Accent">Hyundai Accent</option>
+                        <option value="Hyundai Kona">Hyundai Kona</option>
+                        <option value="Kia K5">Kia K5</option>
+                        <option value="Kia Optima">Kia Optima</option>
+                        <option value="Kia Sportage">Kia Sportage</option>
+                        <option value="Kia Sorento">Kia Sorento</option>
+                        <option value="Kia Carnival">Kia Carnival</option>
+                        <option value="Kia Seltos">Kia Seltos</option>
+                        <option value="Kia Cerato">Kia Cerato</option>
+                        <option value="Kia Rio">Kia Rio</option>
+                        <option value="Kia Soul">Kia Soul</option>
+                        <option value="Kia Telluride">Kia Telluride</option>
+                        <option value="Kia Stinger">Kia Stinger</option>
+                        <option value="Genesis G80">Genesis G80</option>
+                        <option value="Genesis G90">Genesis G90</option>
+                        <option value="Genesis GV80">Genesis GV80</option>
+                        <option value="Genesis GV70">Genesis GV70</option>
+                        <option value="Ssangyong Rexton">Ssangyong Rexton</option>
+                        <option value="Ssangyong Korando">Ssangyong Korando</option>
+                      </optgroup>
                       
                       {/* Chinese Brands */}
-                      <option value="Chery Tiggo 4">Chery Tiggo 4</option>
-                      <option value="Chery Tiggo 7 Pro">Chery Tiggo 7 Pro</option>
-                      <option value="Chery Tiggo 8 Pro">Chery Tiggo 8 Pro</option>
-                      <option value="Haval F7">Haval F7</option>
-                      <option value="Haval Jolion">Haval Jolion</option>
-                      <option value="Haval H9">Haval H9</option>
-                      <option value="Geely Coolray">Geely Coolray</option>
-                      <option value="Geely Tugella">Geely Tugella</option>
-                      <option value="JAC S3">JAC S3</option>
-                      <option value="JAC S7">JAC S7</option>
-                      <option value="Exeed TXL">Exeed TXL</option>
-                      <option value="Exeed VX">Exeed VX</option>
+                      <optgroup label="Китайские автомобили">
+                        <option value="Chery Tiggo 4">Chery Tiggo 4</option>
+                        <option value="Chery Tiggo 7 Pro">Chery Tiggo 7 Pro</option>
+                        <option value="Chery Tiggo 8 Pro">Chery Tiggo 8 Pro</option>
+                        <option value="Chery Tiggo 8 Pro Max">Chery Tiggo 8 Pro Max</option>
+                        <option value="Chery Tiggo 4 Pro">Chery Tiggo 4 Pro</option>
+                        <option value="Haval F7">Haval F7</option>
+                        <option value="Haval F7x">Haval F7x</option>
+                        <option value="Haval Jolion">Haval Jolion</option>
+                        <option value="Haval H9">Haval H9</option>
+                        <option value="Haval H6">Haval H6</option>
+                        <option value="Haval Dargo">Haval Dargo</option>
+                        <option value="Geely Coolray">Geely Coolray</option>
+                        <option value="Geely Tugella">Geely Tugella</option>
+                        <option value="Geely Atlas">Geely Atlas</option>
+                        <option value="Geely Atlas Pro">Geely Atlas Pro</option>
+                        <option value="Geely Monjaro">Geely Monjaro</option>
+                        <option value="JAC S3">JAC S3</option>
+                        <option value="JAC S7">JAC S7</option>
+                        <option value="JAC JS4">JAC JS4</option>
+                        <option value="Exeed TXL">Exeed TXL</option>
+                        <option value="Exeed VX">Exeed VX</option>
+                        <option value="Exeed LX">Exeed LX</option>
+                        <option value="Exeed TXL">Exeed TXL</option>
+                        <option value="FAW Bestune T77">FAW Bestune T77</option>
+                        <option value="FAW Bestune T99">FAW Bestune T99</option>
+                        <option value="Changan CS35 Plus">Changan CS35 Plus</option>
+                        <option value="Changan CS55 Plus">Changan CS55 Plus</option>
+                        <option value="Changan CS75 Plus">Changan CS75 Plus</option>
+                        <option value="Great Wall Poer">Great Wall Poer</option>
+                        <option value="Great Wall Wingle 7">Great Wall Wingle 7</option>
+                        <option value="Omoda C5">Omoda C5</option>
+                        <option value="Jetour X70 Plus">Jetour X70 Plus</option>
+                        <option value="Jetour Dashing">Jetour Dashing</option>
+                        <option value="BYD Song Plus">BYD Song Plus</option>
+                        <option value="BYD Tang">BYD Tang</option>
+                      </optgroup>
                       
                       {/* European Brands */}
-                      <option value="Volkswagen Tiguan">Volkswagen Tiguan</option>
-                      <option value="Volkswagen Touareg">Volkswagen Touareg</option>
-                      <option value="Skoda Kodiaq">Skoda Kodiaq</option>
-                      <option value="Skoda Octavia">Skoda Octavia</option>
-                      <option value="BMW X5">BMW X5</option>
-                      <option value="BMW X7">BMW X7</option>
-                      <option value="Mercedes GLE">Mercedes GLE</option>
-                      <option value="Mercedes GLS">Mercedes GLS</option>
-                      <option value="Audi Q7">Audi Q7</option>
-                      <option value="Audi Q5">Audi Q5</option>
+                      <optgroup label="Европейские автомобили">
+                        <option value="Volkswagen Tiguan">Volkswagen Tiguan</option>
+                        <option value="Volkswagen Touareg">Volkswagen Touareg</option>
+                        <option value="Volkswagen Taos">Volkswagen Taos</option>
+                        <option value="Volkswagen Polo">Volkswagen Polo</option>
+                        <option value="Volkswagen Golf">Volkswagen Golf</option>
+                        <option value="Volkswagen Passat">Volkswagen Passat</option>
+                        <option value="Volkswagen Atlas">Volkswagen Atlas</option>
+                        <option value="Skoda Kodiaq">Skoda Kodiaq</option>
+                        <option value="Skoda Octavia">Skoda Octavia</option>
+                        <option value="Skoda Karoq">Skoda Karoq</option>
+                        <option value="Skoda Superb">Skoda Superb</option>
+                        <option value="BMW X5">BMW X5</option>
+                        <option value="BMW X7">BMW X7</option>
+                        <option value="BMW X3">BMW X3</option>
+                        <option value="BMW X6">BMW X6</option>
+                        <option value="BMW 5-Series">BMW 5-Series</option>
+                        <option value="BMW 7-Series">BMW 7-Series</option>
+                        <option value="BMW 3-Series">BMW 3-Series</option>
+                        <option value="Mercedes-Benz GLE">Mercedes-Benz GLE</option>
+                        <option value="Mercedes-Benz GLS">Mercedes-Benz GLS</option>
+                        <option value="Mercedes-Benz GLC">Mercedes-Benz GLC</option>
+                        <option value="Mercedes-Benz E-Class">Mercedes-Benz E-Class</option>
+                        <option value="Mercedes-Benz S-Class">Mercedes-Benz S-Class</option>
+                        <option value="Mercedes-Benz C-Class">Mercedes-Benz C-Class</option>
+                        <option value="Audi Q7">Audi Q7</option>
+                        <option value="Audi Q5">Audi Q5</option>
+                        <option value="Audi Q3">Audi Q3</option>
+                        <option value="Audi A6">Audi A6</option>
+                        <option value="Audi A4">Audi A4</option>
+                        <option value="Audi A8">Audi A8</option>
+                        <option value="Volvo XC90">Volvo XC90</option>
+                        <option value="Volvo XC60">Volvo XC60</option>
+                        <option value="Volvo XC40">Volvo XC40</option>
+                        <option value="Volvo S90">Volvo S90</option>
+                        <option value="Renault Duster">Renault Duster</option>
+                        <option value="Renault Kaptur">Renault Kaptur</option>
+                        <option value="Renault Arkana">Renault Arkana</option>
+                        <option value="Renault Koleos">Renault Koleos</option>
+                        <option value="Peugeot 3008">Peugeot 3008</option>
+                        <option value="Peugeot 5008">Peugeot 5008</option>
+                        <option value="Land Rover Range Rover">Land Rover Range Rover</option>
+                        <option value="Land Rover Range Rover Sport">Land Rover Range Rover Sport</option>
+                        <option value="Land Rover Discovery">Land Rover Discovery</option>
+                        <option value="Land Rover Defender">Land Rover Defender</option>
+                        <option value="Porsche Cayenne">Porsche Cayenne</option>
+                        <option value="Porsche Macan">Porsche Macan</option>
+                      </optgroup>
                       
                       {/* American Brands */}
-                      <option value="Chevrolet Tahoe">Chevrolet Tahoe</option>
-                      <option value="Chevrolet Traverse">Chevrolet Traverse</option>
-                      <option value="Cadillac Escalade">Cadillac Escalade</option>
-                      <option value="Ford Explorer">Ford Explorer</option>
-                      <option value="Jeep Grand Cherokee">Jeep Grand Cherokee</option>
+                      <optgroup label="Американские автомобили">
+                        <option value="Chevrolet Tahoe">Chevrolet Tahoe</option>
+                        <option value="Chevrolet Traverse">Chevrolet Traverse</option>
+                        <option value="Chevrolet Captiva">Chevrolet Captiva</option>
+                        <option value="Chevrolet Trailblazer">Chevrolet Trailblazer</option>
+                        <option value="Chevrolet Cruze">Chevrolet Cruze</option>
+                        <option value="Cadillac Escalade">Cadillac Escalade</option>
+                        <option value="Cadillac XT5">Cadillac XT5</option>
+                        <option value="Cadillac XT6">Cadillac XT6</option>
+                        <option value="Ford Explorer">Ford Explorer</option>
+                        <option value="Ford Expedition">Ford Expedition</option>
+                        <option value="Ford Focus">Ford Focus</option>
+                        <option value="Ford F-150">Ford F-150</option>
+                        <option value="Jeep Grand Cherokee">Jeep Grand Cherokee</option>
+                        <option value="Jeep Wrangler">Jeep Wrangler</option>
+                        <option value="Jeep Compass">Jeep Compass</option>
+                        <option value="Dodge Durango">Dodge Durango</option>
+                        <option value="Dodge Journey">Dodge Journey</option>
+                        <option value="Dodge Challenger">Dodge Challenger</option>
+                        <option value="Dodge Charger">Dodge Charger</option>
+                      </optgroup>
+                      
+                      {/* Russian Brands */}
+                      <optgroup label="Российские автомобили">
+                        <option value="Lada Vesta">Lada Vesta</option>
+                        <option value="Lada X-Ray">Lada X-Ray</option>
+                        <option value="UAZ Patriot">UAZ Patriot</option>
+                        <option value="UAZ Pickup">UAZ Pickup</option>
+                      </optgroup>
                     </select>
                   </div>
                   <div>
@@ -183,6 +318,18 @@ const Hero: React.FC = () => {
                       <option value="2014">2014</option>
                       <option value="2013">2013</option>
                       <option value="2012">2012</option>
+                      <option value="2011">2011</option>
+                      <option value="2010">2010</option>
+                      <option value="2009">2009</option>
+                      <option value="2008">2008</option>
+                      <option value="2007">2007</option>
+                      <option value="2006">2006</option>
+                      <option value="2005">2005</option>
+                      <option value="2004">2004</option>
+                      <option value="2003">2003</option>
+                      <option value="2002">2002</option>
+                      <option value="2001">2001</option>
+                      <option value="2000">2000</option>
                     </select>
                   </div>
                 </div>
@@ -217,8 +364,8 @@ const Hero: React.FC = () => {
             <FadeIn delay={300} direction="left">
               <div className="relative overflow-hidden rounded-2xl shadow-xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1589641757663-2a39055eed80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                  alt="Датчик давления в шинах TPMS" 
+                  src="/tpms-sensor.jpg" 
+                  alt="Датчик давления в шинах TPMS Autel" 
                   className={`w-full h-auto object-cover transition-all duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
                   onLoad={() => setIsLoaded(true)}
                 />
