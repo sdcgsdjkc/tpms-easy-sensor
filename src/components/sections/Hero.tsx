@@ -1,15 +1,24 @@
 
 import React, { useEffect, useState } from 'react';
 import CustomButton from '../ui/CustomButton';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Send } from 'lucide-react';
 import FadeIn from '../animations/FadeIn';
 
 const Hero: React.FC = () => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [carModel, setCarModel] = useState('Toyota Camry');
+  const [carYear, setCarYear] = useState('2020');
 
   useEffect(() => {
     setIsLoaded(true);
   }, []);
+
+  const openWhatsApp = () => {
+    const message = `Здравствуйте! Хочу записаться на прошивку TPMS. Моя машина: ${carModel} ${carYear}`;
+    const phone = "77764863666"; // Without the + as it's added in the URL
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  };
 
   return (
     <section className="relative min-h-screen flex items-center pt-16 pb-10 overflow-hidden">
@@ -44,7 +53,7 @@ const Hero: React.FC = () => {
             </FadeIn>
             
             <FadeIn delay={400}>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <CustomButton
                   onClick={() => {
                     const servicesSection = document.getElementById('services');
@@ -71,8 +80,62 @@ const Hero: React.FC = () => {
               </div>
             </FadeIn>
             
+            <FadeIn delay={450}>
+              <div className="mb-8 p-4 bg-white rounded-lg shadow-sm border border-gray-100">
+                <h3 className="text-lg font-semibold mb-3 text-tpms-blue">Запись через WhatsApp:</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
+                  <div>
+                    <label htmlFor="carModel" className="block text-sm font-medium text-gray-700 mb-1">Модель автомобиля</label>
+                    <select 
+                      id="carModel"
+                      value={carModel}
+                      onChange={(e) => setCarModel(e.target.value)}
+                      className="w-full p-2 border border-gray-300 rounded-md focus:ring-tpms-blue focus:border-tpms-blue"
+                    >
+                      <option value="Toyota Camry">Toyota Camry</option>
+                      <option value="Toyota Land Cruiser">Toyota Land Cruiser</option>
+                      <option value="Toyota RAV4">Toyota RAV4</option>
+                      <option value="Lexus RX">Lexus RX</option>
+                      <option value="Lexus LX">Lexus LX</option>
+                      <option value="Honda Accord">Honda Accord</option>
+                      <option value="Honda CR-V">Honda CR-V</option>
+                      <option value="Hyundai Sonata">Hyundai Sonata</option>
+                      <option value="Hyundai Santa Fe">Hyundai Santa Fe</option>
+                      <option value="Kia K5">Kia K5</option>
+                      <option value="Kia Sportage">Kia Sportage</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label htmlFor="carYear" className="block text-sm font-medium text-gray-700 mb-1">Год выпуска</label>
+                    <select 
+                      id="carYear"
+                      value={carYear}
+                      onChange={(e) => setCarYear(e.target.value)}
+                      className="w-full p-2 border border-gray-300 rounded-md focus:ring-tpms-blue focus:border-tpms-blue"
+                    >
+                      <option value="2023">2023</option>
+                      <option value="2022">2022</option>
+                      <option value="2021">2021</option>
+                      <option value="2020">2020</option>
+                      <option value="2019">2019</option>
+                      <option value="2018">2018</option>
+                      <option value="2017">2017</option>
+                      <option value="2016">2016</option>
+                      <option value="2015">2015</option>
+                    </select>
+                  </div>
+                </div>
+                <button 
+                  onClick={openWhatsApp}
+                  className="w-full py-3 px-4 bg-[#25D366] hover:bg-[#128C7E] text-white font-semibold rounded-md flex items-center justify-center gap-2 transition-colors"
+                >
+                  <Send size={18} /> Записаться через WhatsApp
+                </button>
+              </div>
+            </FadeIn>
+            
             <FadeIn delay={500}>
-              <div className="mt-10 grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-3 gap-4">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-tpms-blue">15 000 ₸</div>
                   <div className="text-sm text-gray-600">цена датчика</div>
@@ -93,7 +156,7 @@ const Hero: React.FC = () => {
             <FadeIn delay={300} direction="left">
               <div className="relative overflow-hidden rounded-2xl shadow-xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1627689133915-cb0bbf56b537?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                  src="https://i.imgur.com/XVXxQUK.jpg" 
                   alt="Autel TPMS датчик" 
                   className={`w-full h-auto object-cover transition-all duration-1000 image-lazy ${isLoaded ? 'loaded' : 'loading'}`}
                   onLoad={() => setIsLoaded(true)}
