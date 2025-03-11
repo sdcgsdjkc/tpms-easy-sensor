@@ -92,17 +92,74 @@ const Hero: React.FC = () => {
                       onChange={(e) => setCarModel(e.target.value)}
                       className="w-full p-2 border border-gray-300 rounded-md focus:ring-tpms-blue focus:border-tpms-blue"
                     >
+                      {/* Japanese Brands */}
                       <option value="Toyota Camry">Toyota Camry</option>
                       <option value="Toyota Land Cruiser">Toyota Land Cruiser</option>
                       <option value="Toyota RAV4">Toyota RAV4</option>
+                      <option value="Toyota Highlander">Toyota Highlander</option>
+                      <option value="Toyota Corolla">Toyota Corolla</option>
                       <option value="Lexus RX">Lexus RX</option>
                       <option value="Lexus LX">Lexus LX</option>
+                      <option value="Lexus NX">Lexus NX</option>
+                      <option value="Lexus ES">Lexus ES</option>
                       <option value="Honda Accord">Honda Accord</option>
                       <option value="Honda CR-V">Honda CR-V</option>
+                      <option value="Honda Civic">Honda Civic</option>
+                      <option value="Mazda CX-5">Mazda CX-5</option>
+                      <option value="Mazda CX-9">Mazda CX-9</option>
+                      <option value="Mazda 6">Mazda 6</option>
+                      <option value="Nissan X-Trail">Nissan X-Trail</option>
+                      <option value="Nissan Qashqai">Nissan Qashqai</option>
+                      <option value="Nissan Patrol">Nissan Patrol</option>
+                      <option value="Mitsubishi Outlander">Mitsubishi Outlander</option>
+                      <option value="Mitsubishi Pajero">Mitsubishi Pajero</option>
+                      <option value="Subaru Forester">Subaru Forester</option>
+                      <option value="Subaru Outback">Subaru Outback</option>
+                      
+                      {/* Korean Brands */}
                       <option value="Hyundai Sonata">Hyundai Sonata</option>
                       <option value="Hyundai Santa Fe">Hyundai Santa Fe</option>
+                      <option value="Hyundai Tucson">Hyundai Tucson</option>
+                      <option value="Hyundai Creta">Hyundai Creta</option>
+                      <option value="Hyundai Palisade">Hyundai Palisade</option>
                       <option value="Kia K5">Kia K5</option>
                       <option value="Kia Sportage">Kia Sportage</option>
+                      <option value="Kia Sorento">Kia Sorento</option>
+                      <option value="Kia Seltos">Kia Seltos</option>
+                      <option value="Kia Carnival">Kia Carnival</option>
+                      
+                      {/* Chinese Brands */}
+                      <option value="Chery Tiggo 4">Chery Tiggo 4</option>
+                      <option value="Chery Tiggo 7 Pro">Chery Tiggo 7 Pro</option>
+                      <option value="Chery Tiggo 8 Pro">Chery Tiggo 8 Pro</option>
+                      <option value="Haval F7">Haval F7</option>
+                      <option value="Haval Jolion">Haval Jolion</option>
+                      <option value="Haval H9">Haval H9</option>
+                      <option value="Geely Coolray">Geely Coolray</option>
+                      <option value="Geely Tugella">Geely Tugella</option>
+                      <option value="JAC S3">JAC S3</option>
+                      <option value="JAC S7">JAC S7</option>
+                      <option value="Exeed TXL">Exeed TXL</option>
+                      <option value="Exeed VX">Exeed VX</option>
+                      
+                      {/* European Brands */}
+                      <option value="Volkswagen Tiguan">Volkswagen Tiguan</option>
+                      <option value="Volkswagen Touareg">Volkswagen Touareg</option>
+                      <option value="Skoda Kodiaq">Skoda Kodiaq</option>
+                      <option value="Skoda Octavia">Skoda Octavia</option>
+                      <option value="BMW X5">BMW X5</option>
+                      <option value="BMW X7">BMW X7</option>
+                      <option value="Mercedes GLE">Mercedes GLE</option>
+                      <option value="Mercedes GLS">Mercedes GLS</option>
+                      <option value="Audi Q7">Audi Q7</option>
+                      <option value="Audi Q5">Audi Q5</option>
+                      
+                      {/* American Brands */}
+                      <option value="Chevrolet Tahoe">Chevrolet Tahoe</option>
+                      <option value="Chevrolet Traverse">Chevrolet Traverse</option>
+                      <option value="Cadillac Escalade">Cadillac Escalade</option>
+                      <option value="Ford Explorer">Ford Explorer</option>
+                      <option value="Jeep Grand Cherokee">Jeep Grand Cherokee</option>
                     </select>
                   </div>
                   <div>
@@ -113,6 +170,7 @@ const Hero: React.FC = () => {
                       onChange={(e) => setCarYear(e.target.value)}
                       className="w-full p-2 border border-gray-300 rounded-md focus:ring-tpms-blue focus:border-tpms-blue"
                     >
+                      <option value="2024">2024</option>
                       <option value="2023">2023</option>
                       <option value="2022">2022</option>
                       <option value="2021">2021</option>
@@ -122,6 +180,9 @@ const Hero: React.FC = () => {
                       <option value="2017">2017</option>
                       <option value="2016">2016</option>
                       <option value="2015">2015</option>
+                      <option value="2014">2014</option>
+                      <option value="2013">2013</option>
+                      <option value="2012">2012</option>
                     </select>
                   </div>
                 </div>
@@ -156,9 +217,9 @@ const Hero: React.FC = () => {
             <FadeIn delay={300} direction="left">
               <div className="relative overflow-hidden rounded-2xl shadow-xl">
                 <img 
-                  src="https://i.imgur.com/XVXxQUK.jpg" 
-                  alt="Autel TPMS датчик" 
-                  className={`w-full h-auto object-cover transition-all duration-1000 image-lazy ${isLoaded ? 'loaded' : 'loading'}`}
+                  src="https://images.unsplash.com/photo-1589641757663-2a39055eed80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                  alt="Датчик давления в шинах TPMS" 
+                  className={`w-full h-auto object-cover transition-all duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
                   onLoad={() => setIsLoaded(true)}
                 />
               </div>
