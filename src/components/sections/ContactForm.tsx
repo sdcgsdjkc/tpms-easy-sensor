@@ -1,8 +1,10 @@
+
 import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Calendar, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Calendar, Clock, Send } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import CustomButton from '../ui/CustomButton';
 import FadeIn from '../animations/FadeIn';
+import { useToast } from '@/hooks/use-toast';
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -16,6 +18,7 @@ const ContactForm: React.FC = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const { toast } = useToast();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -45,6 +48,18 @@ const ContactForm: React.FC = () => {
         setIsSuccess(false);
       }, 5000);
     }, 1500);
+  };
+
+  const openWhatsApp = () => {
+    const message = `Здравствуйте! Хочу записаться на прошивку TPMS. Моя машина: ${formData.car || 'Toyota Camry'}. Предпочтительная дата: ${formData.date || 'не указана'}, время: ${formData.time || 'не указано'}`;
+    const phone = "77781929139"; // Without the + as it's added in the URL
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+    
+    toast({
+      title: "Открываем WhatsApp",
+      description: "Переходим в приложение для записи",
+    });
   };
 
   return (
@@ -78,8 +93,8 @@ const ContactForm: React.FC = () => {
                   <Phone className="h-5 w-5 text-tpms-blue mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium">Телефон</h4>
-                    <a href="tel:+77777777777" className="text-gray-600 hover:text-tpms-blue transition-colors">
-                      +7 (777) 777-7777
+                    <a href="tel:+77781929139" className="text-gray-600 hover:text-tpms-blue transition-colors">
+                      +7 (778) 192-9139
                     </a>
                   </div>
                 </div>
@@ -262,7 +277,15 @@ const ContactForm: React.FC = () => {
                   ></textarea>
                 </div>
                 
-                <div className="flex justify-end">
+                <div className="flex flex-col sm:flex-row gap-4 justify-end">
+                  <button 
+                    type="button"
+                    onClick={openWhatsApp}
+                    className="py-3 px-6 bg-[#25D366] hover:bg-[#128C7E] text-white font-semibold rounded-md flex items-center justify-center gap-2 transition-colors"
+                  >
+                    <Send size={18} /> Записаться через WhatsApp
+                  </button>
+                  
                   <CustomButton 
                     type="submit" 
                     size="lg"

@@ -58,9 +58,9 @@ const Navbar: React.FC = () => {
         </nav>
 
         <div className="hidden md:flex items-center">
-          <a href="tel:+77777777777" className="flex items-center mr-4 text-gray-700 hover:text-tpms-blue transition-colors duration-300">
+          <a href="tel:+77781929139" className="flex items-center mr-4 text-gray-700 hover:text-tpms-blue transition-colors duration-300">
             <Phone className="h-4 w-4 mr-2" />
-            <span>+7 (777) 777-7777</span>
+            <span>+7 (778) 192-9139</span>
           </a>
           <CustomButton 
             onClick={() => {
@@ -101,9 +101,9 @@ const Navbar: React.FC = () => {
               <NavLink href="#contact" onClick={closeMenu}>Контакты</NavLink>
             </nav>
             <div className="mt-auto mb-10">
-              <a href="tel:+77777777777" className="flex items-center mb-4 text-gray-700">
+              <a href="tel:+77781929139" className="flex items-center mb-4 text-gray-700">
                 <Phone className="h-4 w-4 mr-2" />
-                <span>+7 (777) 777-7777</span>
+                <span>+7 (778) 192-9139</span>
               </a>
               <CustomButton 
                 onClick={() => {

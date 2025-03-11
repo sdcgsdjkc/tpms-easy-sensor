@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import CustomButton from '../ui/CustomButton';
 import { ArrowDown, Send, Car } from 'lucide-react';
@@ -17,7 +16,7 @@ const Hero: React.FC = () => {
 
   const openWhatsApp = () => {
     const message = `Здравствуйте! Хочу записаться на прошивку TPMS. Моя машина: ${carModel} ${carYear}`;
-    const phone = "77764863666"; // Without the + as it's added in the URL
+    const phone = "77781929139"; // Without the + as it's added in the URL
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
     
@@ -733,3 +732,4 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
+
